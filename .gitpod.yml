@@ -4,12 +4,7 @@ image:
 ports:
   - port: 5000
     onOpen: open-preview
-
-tasks:
-  - init: |
-    python -m pip install --upgrade pip
-    pip install -r requirements.txt
-
+    
 vscode:
   extensions:
     - ms-python.python
