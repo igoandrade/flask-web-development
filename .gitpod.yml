@@ -1,3 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+
 ports:
   - port: 5000
     onOpen: open-preview
@@ -6,11 +9,6 @@ tasks:
   - before: |
       export FLASK_APP=flaskr
       export FLASK_ENV=development
-  - init: |
-      pip install -e .
-      flask init-db
-  - command: |
-      flask run
 
 vscode:
   extensions:
