@@ -1,10 +1,12 @@
 tasks:
-  - init: pip3 install -r requirements.txt
+  - init: |
+      pip3 install --upgrade pip
+      pip3 install -r requirements.txt
 
 ports:
   - port: 5000
     onOpen: open-preview
-    
+
 vscode:
   extensions:
     - ms-python.python
@@ -12,3 +14,4 @@ vscode:
     - ritwickdey.liveserver
     - dracula-theme.theme-dracula
     - enkia.tokyo-night
+    - ms-toolsai.jupyter
